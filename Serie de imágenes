@@ -1,0 +1,12 @@
+PYHTON 
+
+ancho = int(input("Ancho:"))  
+print(ancho * "-")
+non = ancho % 2
+espacios = ancho//2 - 1
+if ancho<=4:
+        espacios = ancho//2-1
+        print("|"+espacios*" " + " | " + " "*non)
+else:
+    print("|"+espacios*" " + "  |" + " "*non)
+print(ancho * "-")
