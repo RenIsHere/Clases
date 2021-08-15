@@ -1,0 +1,14 @@
+PYTHON
+
+total=int(input("Costo estacionamiento: "))
+pago=int(input("Paga con: "))
+cambio=pago-total
+print("Su cambio es de:", cambio)
+monedas = [10,5,2,1]
+N=N=int(cambio)
+for i in monedas:
+        if(N/i>=1):
+            print("la cantidad de monedas de " +str(i) +" es: " +str(int(N/i)))
+        N=N%i
+        
+             
