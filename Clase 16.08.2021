@@ -1,0 +1,46 @@
+#Clase 16.08.2021
+#CONDICIONALES
+
+#Ejemplo 1:
+
+n = int(input("n:"))
+if n<10:
+    print("Tiene 1 dígito")
+elif n<100:
+    print("Tiene 2 dígito")
+elif n<1000:
+    print("Tiene 3 dígito")
+else:
+    print("Tiene 4 dígitos")
+    
+#Ejemplo2:
+
+hora = int(input("Hora:"))
+minutos=int(input("Minutos:"))
+segundos = int(input("Segundos:"))
+if segundos==59 and minutos==59 and hora==23:
+    segundos=0
+    minutos=0
+    hora=0
+elif segundos==59 and minutos==59:
+    segundos=0
+    minutos=0
+    hora=hora+1
+elif segundos==59:
+    segundo=0
+    minutos=minutos+1
+else:
+    segundos=segundos+1
+print(hora, minutos, segundos)
+
+#Ejemplo3
+
+o=int(input("oscilaciones"))
+if o >=100:
+  print("alerta roja")
+elif 20<= o <100:
+  print("alerta amarilla")
+  rk=o/100
+  print("el factor rk:")
+else:
+    print("normal")
