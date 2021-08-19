@@ -12,3 +12,33 @@ if distancia > diametro:
     print("No hay colisión")
 else:
     print("Si hay colisión")
+
+
+tablero.py
+
+import random
+dado1=random.randint(1,6)
+dado2=random.randint(1,6)
+print("Primera tirada: ", dado1, dado2)
+casilla=0
+
+if dado1==dado2:
+    casilla=casilla+dado1*4 #tmb se puede representar (dado1+dado2)*2
+else:
+    casilla=casilla+dado1+dado2
+if casilla%6==0:
+    casilla=casilla+2
+print("Llega a: ", casilla)
+
+dado1=random.randint(1,6)
+dado2=random.randint(1,6)
+print("Segunda tirada: ", dado1, dado2)
+casilla=0
+
+if dado1==dado2:
+    casilla=casilla+dado1*4  
+else:
+    casilla=casilla+dado1+dado2
+if casilla%6==0:
+    casilla=casilla+2
+print("Llega a: ", casilla)
