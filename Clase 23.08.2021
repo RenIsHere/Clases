@@ -1,0 +1,32 @@
+#EJEMPLO 1
+#FORMA FOR
+a=int(input("a: "))
+b=int(input("b: "))
+
+for i in range (a,b+1):
+    if i%2==0:
+        print(i)
+#FORMA WHILE
+o=a
+while o<=b:
+    if o%2==0:
+        print(o)
+    o=o+1
+
+print("---")
+
+u=a
+if u%2==1: u=u+1
+while u<=b:
+    print(u)
+    u=u+2
+    
+#EJEMPLO 2  
+suma=0
+contador=0
+while suma<1000:
+    valor=int(input("Valor: "))
+    suma=suma+valor
+    contador+=1
+print("La suma total es: ", suma)
+print("Valores introducidos: ", contador)
