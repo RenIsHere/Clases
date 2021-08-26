@@ -1,0 +1,15 @@
+def es_primo(i):        #def es una definicion
+    if i<2:
+        return False
+    for o in range(2,i):
+        if i%o==0:
+            return False
+        return True
+
+numero=int(input("Número: "))
+for j in range(2,numero):       #mantenemos un rango de números a contar entre "numero" y el 2
+    if es_primo(j):
+        k=numero-j
+        if es_primo(k):
+            if j<=k:           #se evalua junto con "es_primo" para corroborar que sea un primo 
+                print("primos",j,k)
