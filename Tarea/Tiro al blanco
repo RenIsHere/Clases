@@ -1,0 +1,26 @@
+import random
+import math
+puntaje=0
+
+X1=round(random.random()*5,2)
+Y1=round(random.random()*5,2)
+X2=round(random.random()*5,2)
+Y2=round(random.random()*5,2)
+
+dist1=round(math.sqrt((X1*2 + Y1*2)), 2)
+dist2=round(math.sqrt((X2*2 + Y2*2)), 2)
+
+print("Resultado del primer tiro:", X1,Y1)
+print("Distancia del centro", dist1)
+print("Resultado del primer tiro:", X2,Y2)
+print("Distancia del centro", dist2)
+
+if dist1 <=1:
+    puntaje=puntaje + 100
+elif dist1 <3:
+    puntaje=puntaje +80
+if dist2 <=1:
+    puntaje=puntaje + 100
+elif dist2 <3:
+    puntaje=puntaje +80
+print("Puntaje final;", puntaje)
