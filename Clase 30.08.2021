@@ -1,4 +1,5 @@
 #ejemplo1 
+#PYTHON
 import random
 simulaciones=int(input("Número de simulaciones:"))
 suma=0
