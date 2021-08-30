@@ -1,0 +1,22 @@
+#ejemplo1 
+import random
+simulaciones=int(input("Número de simulaciones:"))
+suma=0
+simp=1
+while simp<=simulaciones:
+    print("Simluaciones",simp)
+    niños = niñas= 0 
+    simp=simp+1
+    while niños==0 or niñas==0:
+        bebe=random.randint(0,1)
+        if bebe==0:
+            print("Niña", end="")
+            niñas=niñas+1
+        else:
+            print("Niño", end="")
+            niños=niños+1
+    print("")
+    print("Hijos", niños+niñas)
+    suma+=niños+niñas
+promedio=suma/simulaciones
+print("En promedio tuvieron", promedio, "hijos")
