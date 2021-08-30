@@ -1,0 +1,25 @@
+import random
+A=14
+J=11
+Q=12
+K=13
+cartas=[A, 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K]
+dinero=1000
+while dinero>0:
+    si=int(input("Ingrese su apuesta:"))
+    if si>dinero:
+        print("¡No tienes ese dinero!")
+    else:
+        i=random.choice(cartas)
+        o=random.choice(cartas)
+        print("Carta computadora:", i,"Carta humano: ", o)
+        if i>o:
+            dinero-=si
+            print("Dinero: ", dinero)
+        elif i==o:
+            print("Empate")
+        else:
+            dinero+=si
+            print("Dinero: ", dinero)
+    if dinero==0:
+        print("Fin del juego")
