@@ -1,0 +1,14 @@
+#FUNCIONES
+def sumar(a,b): #realizan tareas simples o subprocesos 
+    resultado=a+b
+    return resultado #envía el resultado de "sumar" a donde sea que se llamase la def
+
+print("Hola")
+r=sumar(3,8)
+print(r)
+
+x=int(input("x: "))
+y=int(input("y: ")) #la def toma todo valor igual a y b (x=a, y=b)
+r=sumar(x,y)
+print(r)
+
